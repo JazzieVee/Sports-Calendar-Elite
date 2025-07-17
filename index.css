@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alumni Sans SC", sans-serif;
+}
+html {
+        scroll-behavior: smooth; 
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+button:hover {
+    margin-top: 3px;
+}
+
+section {
+    background-color:rgba(10, 102, 51, 0.808);
+}
+
+.yellow {
+ color: rgb(253, 253, 11);
+}
+
+.large {
+    margin-left: 10px;
+}
+
+/* 
+
+NAVIGATION
+
+*/
+
+nav { 
+    margin: 8px;
+    width: 100%;
+    max-width: 1200px;
+    height: 100px; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 8px 24px;
+}
+
+
+#landing-page {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.sports__logo--cont {
+    margin-top: 24px;
+    margin-left: 100px;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    border-radius: 68px;
+}
+
+.sports__logo {  
+    width: 120px;
+    height: 120px;
+    transform: scale(.8);
+    paddinG-top: 12px;
+}
+
+.nav__link--list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-right: 28px;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: yellow;
+    margin-top: 3px;
+}
+
+.subscribe__btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 20px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 35px;
+    background-image: url(basketball_pic.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    overflow: hidden;
+ }
+
+.nav__link--btn {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.nav__link--btn:hover {
+    color: black;
+    transition: all 300ms ease;
+}
+
+.nav__link--anchor {
+    color: rgb(253, 253, 11);
+}
+
+
+
+/* 
+  HEADER 
+*/
+
+header {
+    position: relative; 
+
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+        font-size: 84px;
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        line-height: .7;
+        letter-spacing: 1px;
+    }
+
+.header__sub-title {
+    font-size: 25px;
+    line-height: .8;
+}
+
+.header__sub-title--two {
+    font-size: 72px;
+    line-height: .8;
+}
+
+#search__input {
+    padding: 12px 16px 12px 24px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 40px;  
+    width: 100%;
+    max-width: 650px;
+    z-index: 50;
+    align-items: start;
+    margin-right: 140px;
+}
+
+.fa-magnifying-glass {
+    font-size: 40px;
+    color: yellow;
+}
+
+.fa-magnifying-glass:hover {
+    color: white; 
+}
+
+.search__btn {
+    background-color: rgb(218, 130, 15);
+    padding: 0 40px 4px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 60px;
+    margin-left: 24px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 210px;
+    right: 320px;
+    background-image: url(football_pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160%;
+    z-index: 100;
+}
+
+.search__btn:hover {
+    background-color: rgb(22, 245, 2);
+}
+
+
+.search__line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.sport__container {
+    padding: 16px 100px;
+}
+
+.sport__row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sport__flip {
+    width: 55%;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sports__logo {
+    width: 100px;
+    height: 100px;
+    }
+
+    .sports__logo--cont {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+
+    .nav__link {
+       margin-left: 80px;
+    }
+
+    .subscribe__btn {
+        position: absolute;
+        top: 38px;
+        right: 60px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    
+    .header__title {
+        font-size: 60px;
+        margin: 12px;
+        letter-spacing: 4px;
+        line-height: .9;
+    }
+
+    .header__sub-title {
+        font-size: 40px;
+    }
+
+    .header__sub-title--two {
+        font-size: 100px;
+    }
+
+    #search__input {
+        width: 60%
+    }
+
+    .search__btn {
+        padding: 16px 30px 12px 30px;
+        font-size: 30px;
+        top: 215px;
+        right: 32px;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 30px; 
+    }
+
+    .sport__flip {
+        width: 65%;
+    }
+}
