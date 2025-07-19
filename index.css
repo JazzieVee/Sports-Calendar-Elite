@@ -423,13 +423,14 @@ header {
         letter-spacing: 1.1px;
         width: 90%;
         text-align: left;
+        line-height: .9;
     }
 
     .header__sub-title {
         font-size: 50px;
         width: 90%;
         line-height: 1;
-        margin-top: 10px;
+        margin-top: 8px;
     }
     
     .search__line {
@@ -439,12 +440,12 @@ header {
 
     #search__input {
         padding: 10px 10px 10px 18px;
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .search__btn {
         padding: 0px 170px;
-        top: 500px;
+        top: 460px;
         right: 25px;
         background-size: 120%;
         font-size: 48px;
