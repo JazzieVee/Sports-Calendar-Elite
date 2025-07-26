@@ -29,7 +29,7 @@ button {
 }
 
 button:hover {
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 #landing-page {
@@ -118,8 +118,7 @@ nav {
 .nav__link:hover {
     text-decoration: underline;
     text-decoration-color: yellow;
-    text-underline-offset: 4px;
-    margin-top: 3px;
+    text-underline-offset: 4px;  
 }
 
 .subscribe__btn {
@@ -135,6 +134,7 @@ nav {
     background-size: cover;
     background-position-y: center;
     overflow: hidden;
+    transition: all 300ms ease;
  }
 
 .nav__link--btn {
@@ -142,11 +142,7 @@ nav {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1.2px;
-    transition: all 300ms ease;
-}
-
-.nav__link--btn:hover {
-    color: black;
+    
 }
 
 .nav__link--anchor {
@@ -221,10 +217,6 @@ header {
 .fa-magnifying-glass {
     font-size: 40px;
     color: yellow;
-}
-
-.fa-magnifying-glass:hover {
-    color: white; 
 }
 
 .search__btn {

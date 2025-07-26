@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/schedule.css">
     <script src="https://kit.fontawesome.com/416312be23.js" crossorigin="anonymous"></script>
+    <script src="/schedule.js" defer></script>
     <title>Game Schedule</title>
 </head>
+
 <body>
     <nav>
-            <div class="nav__row">
-                <div class="nav__wrapper">
-            <figure class="sports__logo--cont">
-                <img src="./SCE-LOGO.png" class="sports__logo">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="/index.html" class="nav__link--anchor link__hover-effect">HOME</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect">CHOOSE YOUR TEAM</a>
-                </li>
-                <li class="nav__link">
-                    <button class="subscribe__btn"><a href="#" class="nav__link--btn link__hover-effect">SUBSCRIBE</a></button>
-                </li>
-            </ul>
+        <div class="nav__row">
+            <div class="nav__wrapper">
+                <figure class="sports__logo--cont">
+                    <img src="./SCE-LOGO.png" class="sports__logo">
+                </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="/index.html" class="nav__link--anchor link__hover-effect">HOME</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="nav__link--anchor link__hover-effect">CHOOSE YOUR TEAM</a>
+                    </li>
+                    <li class="nav__link">
+                        <button class="subscribe__btn"><a href="#"
+                                class="nav__link--btn link__hover-effect">SUBSCRIBE</a></button>
+                    </li>
+                </ul>
             </div>
             <div>
-            <h3 class="container__title">Pick Your Sport</h3> 
-        </div>
-        <div class="search__line">
-            <input type="search" id="search__input" placeholder="Search by Team or Sport"> 
-            <button class="search__btn--two" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <h3 class="container__title">Pick Your Sport</h3>
             </div>
-          
-            
+            <div class="search__line">
+                <input type="search" id="search__input" placeholder="Search by Team or Sport">
+                <button class="search__btn--two" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+
             <div class="menu__close">
                 <div>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                </div>
-                </div>
-        </nav>
-        <hr>
-            <section id="landing-page">
-                <div class="container__wrapper">
-                    <div class="row">
-          <div class="sports__team">
-            <div class="team-card">
-                <div class="team-card__container">
-                    <h3>Team.Name</h3>
-                    <p><b>Mascot:</b> team.mascot</p>
-                    <p><b>Record:</b> team.record</p>
-                    <p><b>Division:</b> division.name</p>
-                </div>
-             </div>
-          </div>
-          </div>
-          </div>
-        </section>
-    
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <section id="landing-page">
+        <div class="container">
+            <div class="row">
+                <div class="sports">
+                    <a href="/index.html">
+                        <h2>Back</h2>
+                    </a>
+                    </div>
+                    <div class="team__schedule--cards">
+                        <div class="schedule-card__container"></div>
+                    </div>
+                
+                <!-- <div class="sports__teams">
+                    <div class="team-card">
+                        <div class="schedule-card__container">
+                            <div class="home__team"><h3><b>Home:</b> OAKLAND</h3>
+                            <p><b>SCORE:</b> 1</p></div>
+                             <div class="away__team"><h3><b>Home:</b> TEXAS</h3>
+                            <p><b>SCORE:</b> 2</p></div>
+                            <p><b>GAME TIME:</b>FINAL</p>
+                            <p><STRONG>GLOBE LIFE FIELD</STRONG></p>
+                            <p><STRONG>MLB.TV</STRONG></p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+    </section>
+
 </body>
+
 </html>
-
-
-
