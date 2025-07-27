@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="schedule.css">
+    <script src="/schedule.js" defer></script>
+</head>
+
+<body>
+
+
+    <section id="landing-page">
+        <div class="container">
+            <div class="row">
+                <div class="sports">
+                    <a href="/index.html">
+                        <h2>Back</h2>
+                    </a>
+                    <div class="sport__search--container">
+                        <label class="search__label">
+                            Search by Sport
+                        </label>
+                        <input type="text" placeholder="NFL" onchange="onSearchChange(event)">
+                    </div>
+                </div>
+                <div class="flex flex-1">
+                    <div class="team__row">
+                        <div class="team__schedule--cards">
+                            <div class="schedule-card__container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

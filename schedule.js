@@ -6,39 +6,36 @@ const currentDate = new Date();
 const month = String(currentDate.getMonth() + 1).padStart(2,'0');
 const day = String(currentDate.getDate()).padStart(2,'0');
 const year = currentDate.getFullYear();
-const formattedDate = `${month}-${day}-${year}`;
+const formattedDate = `${year}-${month}-${day}`;
 
 const gameArray = document.querySelector(".schedule-card__container");
 
-
 async function gamesBySport() {
     try{
-const response = await fetch(`https://api.apilayer.com/therundown/sports/2/schedule?limit=100&from=${formattedDate}`,{
+const response = await fetch(`https://api.apilayer.com/therundown/sports/1/schedule?limit=9&from=${formattedDate}`,{
     headers: {
         "apikey": "aNoSnnyZRGVdeoZdIBXwBMgXkAxNseWj"
     }
-})
+});
 
 if(!response.ok) {
     throw new Error('Network response was not ok');
 }
+
 const gameData = await response.json();
+console.log(gameData);
 
-gameArray.innerHtml = gameData.map(game => schedHtml(game)).join('');
-    
-}
-catch (error) {
+const schedulesArray = gameData.schedules;
+
+gameArray.innerHTML = schedulesArray.map(schedule => schedHtml(schedule)).join('');
+
+}catch (error){
         console.error('There was a problem with the fetch operation:', error);
-    };}
+   }
+}
 
-
-
-
-
-gamesBySport()
-
-function schedHtml() {
-    return  `<div class="schedule-card__container">
+function schedHtml(game) {
+    return  `<div class="team_schedule">
                             <div class="teams">
                             <div><h3 class="team-name"> ${game.home_team}</h3>
                             <p><b>SCORE:</b> ${game.home_score}</p></div>
@@ -48,12 +45,13 @@ function schedHtml() {
                             </div>
                             <hr>
                             <p class="game-time"><b>GAME TIME:</b> ${game.event_status_detail}</p>
-                            <hr>
-                            <p><STRONG> ${game.event_location}</STRONG></p>
-                            <hr>
+                            
+                            <p><STRONG>${game.event_location}</STRONG></p>
+                            
                             <p><STRONG>${game.broadcast}</STRONG></p>
                         </div>`;
 }
+gamesBySport();
 
 // document.querySelector(".schedule-card__container").innerHTML = schedHTML;
 
